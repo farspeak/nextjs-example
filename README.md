@@ -6,6 +6,22 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Create an app in the [dashboard](https://dashboard.farspeak.ai).
+
+Prepare env vars:
+
+```js
+const { FARSPEAK_APP, FARSPEAK_ENV, FARSPEAK_BACKEND_TOKEN } = process.env;
+```
+
+Or in shell:
+
+```bash
+export FARSPEAK_APP=
+export FARSPEAK_ENV=
+export FARSPEAK_BACKEND_TOKEN=
+```
+
 Install dependencies:
 
 ```bash
