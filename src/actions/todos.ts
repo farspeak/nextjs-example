@@ -1,5 +1,14 @@
 "use server";
 
+/*
+https://github.com/farspeak/nextjs-example
+--
+To run the code you need following:
+process.env.FARSPEAK_APP
+process.env.FARSPEAK_ENV
+process.env.FARSPEAK_BACKEND_TOKEN
+*/
+
 import { Todo } from "@/app/types/types";
 import farspeak from "@/farspeak/init";
 
@@ -31,6 +40,5 @@ export async function deleteAll() {
 
 export async function updateTodo(id: string, { ...props }) {
   const updated = await farspeak.entity("todos").update<Todo>({ id, ...props });
-  console.log({ updated });
   return updated;
 }
